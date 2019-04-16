@@ -2,14 +2,22 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{authblk}
-% \usepackage[showframe]{geometry}
+\usepackage{fancyhdr}
+\usepackage{natbib}
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Article}
+\lhead{``Research``}
+\rfoot{Page \thepage}
 
 \title{A Comparative Analysis between Pakistan, Iran and Germany About "Research” Contribution in Economic Development and Its Indirect Impact on Establishing Society}
 \date{\today}
 \author[1]{Rafay Ghafoor}
 \author[2]{Humza Ali}
 \author[3]{Subhan Ahmed}
-\affil[1]{Department of Computer Science, FAST NUCES}
+\author[4]{Zia Shahid}
+\author[5]{Umer Shehzad}
+\affil{Department of Computer Science, FAST NUCES}
 
 
 \usepackage{titling}
@@ -22,11 +30,23 @@
 \maketitle
 \end{titlingpage}
 
+\newpage
+
+\newpage
 \tableofcontents
 \newpage
 
+
+\section{Abstract}
+\textbf{Keywords:}
+\section{Introduction}
 \section{Literature Review}
+\section{Methodology}
 \section{Findings}
 \section{Conclusion}
+\section{References}
+\cite{Wel03} presents some methodology on how to perform tests of equivalence,and also the one-sided versions of these, which are known as non-inferiority ornon-superiority tests. On the other hand, if you want to know about receiveroperating characteristic (ROC) curves, a good source of information is \cite{Met78}.
 
+\bibliography{myref}
+\bibliographystyle{newapa}
 \end{document}

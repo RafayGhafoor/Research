@@ -1,3 +1,5 @@
 \contentsline {section}{\numberline {1}Literature Review}{2}% 
-\contentsline {section}{\numberline {2}Findings}{2}% 
-\contentsline {section}{\numberline {3}Conclusion}{2}% 
+\contentsline {section}{\numberline {2}Research}{2}% 
+\contentsline {section}{\numberline {3}Findings}{2}% 
+\contentsline {section}{\numberline {4}Conclusion}{2}% 
+\contentsline {section}{\numberline {5}References}{2}% 
