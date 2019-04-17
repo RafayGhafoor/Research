@@ -1,52 +1,84 @@
-\documentclass[]{article}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-\usepackage{authblk}
-\usepackage{fancyhdr}
-\usepackage{natbib}
-\pagestyle{fancy}
-\fancyhf{}
-\rhead{Article}
-\lhead{``Research``}
-\rfoot{Page \thepage}
+\documentclass[letterpaper]{article}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{amsmath}
+\usepackage[some]{background}
 
-\title{A Comparative Analysis between Pakistan, Iran and Germany About "Research” Contribution in Economic Development and Its Indirect Impact on Establishing Society}
-\date{\today}
-\author[1]{Rafay Ghafoor}
-\author[2]{Humza Ali}
-\author[3]{Subhan Ahmed}
-\author[4]{Zia Shahid}
-\author[5]{Umer Shehzad}
-\affil{Department of Computer Science, FAST NUCES}
+\definecolor{titlepagecolor}{cmyk}{1,.60,0,.40}
 
+\backgroundsetup{
+scale=1.42,
+angle=0,
+opacity=2,
+contents={\begin{tikzpicture}[remember picture,overlay]
+ \path [fill=titlepagecolor] (current page.west)rectangle (current page.north east); 
+ \draw [color=white, very thick] (5,0)--(5,0.5\paperheight);
+\end{tikzpicture}}
+}
 
-\usepackage{titling}
-\renewcommand\maketitlehooka{\null\mbox{}\vfill}
-\renewcommand\maketitlehookd{\vfill\null}
+\makeatletter                   
+\def\printauthor{%                  
+    {\large \@author}}          
+\makeatother
+
+\author{%
+    \textbf{FAST NUCES}\\
+    Department of Computer Science \\
+    \textbf{\newline Authors:} \\
+    \item[$\cdot$] Rafay Ghafoor 
+    \item[$\cdot$] Humza Ali
+    \item[$\cdot$] Subhan Ahmed 
+    \item[$\cdot$] Umer Shehzad 
+    \item[$\cdot$] Zia Shahid 
+    }
 
 \begin{document}
 
-\begin{titlingpage}
-\maketitle
-\end{titlingpage}
-
+\begin{titlepage}
+\BgThispage
+\newgeometry{left=0.4cm,right=0.5cm,bottom=1cm}
+\vspace*{0.3\textheight}
+\noindent
+\textcolor{white}{\huge\textbf{\textsf{Contribution of Research in Economic Development}}} \\ \\
+\textcolor{white}{\LARGE\textbf{\textsf{(A Comparison between Pakistan, Iran and Germany)}}} \\
+\vspace*{3cm}\par
+\noindent
+\begin{minipage}{0.35\linewidth}
+    \begin{flushright}
+        \printauthor
+    \end{flushright}
+\end{minipage} \hspace{15pt}
+%
+\begin{minipage}{0.02\linewidth}
+    \rule{1pt}{175pt}
+\end{minipage} \hspace{-10pt}
+%
+\begin{minipage}{0.63\linewidth}
+\vspace{5pt}
+    \begin{abstract} 
+An abstract is a brief summary of a research article, thesis, review, conference proceeding or any in-depth analysis of a particular subject or discipline, and is often used to help the reader quickly ascertain the paper's purpose. When used, an abstract always appears at the beginning of a manuscript, acting as the point-of-entry for any given scientific paper or patent application. Abstracting and indexing services for various academic disciplines are aimed at compiling a body of literature for that particular subject.
+    \end{abstract}
+\end{minipage}
+\end{titlepage}
+\restoregeometry
 \newpage
 
 \newpage
 \tableofcontents
 \newpage
 
-
 \section{Abstract}
 \textbf{Keywords:}
 \section{Introduction}
+\subsection{Research Question}
+\subsection{Limitations}
 \section{Literature Review}
+\subsection{Sources}
 \section{Methodology}
+\subsection{Data Gathering}
+\subsection{Research Design}
 \section{Findings}
 \section{Conclusion}
 \section{References}
-\cite{Wel03} presents some methodology on how to perform tests of equivalence,and also the one-sided versions of these, which are known as non-inferiority ornon-superiority tests. On the other hand, if you want to know about receiveroperating characteristic (ROC) curves, a good source of information is \cite{Met78}.
 
-\bibliography{myref}
-\bibliographystyle{newapa}
 \end{document}
